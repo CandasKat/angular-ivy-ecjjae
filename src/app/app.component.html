@@ -1,0 +1,8 @@
+<img
+  #image
+  src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png"
+  (mouseDown)="onMouseDown(this)"
+  (mouseMove)="onMouseMove(this)"
+  (drag)="onMouseDrag(this)"
+/>
+<rect [element]="this.image"></rect>
