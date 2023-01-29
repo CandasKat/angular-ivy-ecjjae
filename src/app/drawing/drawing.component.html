@@ -1,0 +1,11 @@
+<button appCanvas (click)="onDrawClick()">Draw</button>
+<button appCanvas (click)="onDragClick()">Drag</button>
+<button appCanvas (click)="onDeleteClick()">Delete</button>
+
+<canvas appCanvas id="canvas"
+        (mousedown)="onMouseDown($event)"
+        (mouseup)="onMouseUp($event)"
+        (mousemove)="onMouseMove($event)"
+>
+</canvas>
+<span appCanvas id="output"></span>

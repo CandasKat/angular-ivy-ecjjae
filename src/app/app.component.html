@@ -1,18 +1,4 @@
-<img
-  #image
-  src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png"
-/>
+<rect-draw></rect-draw>
 
-<div appCanvas>
-  <button appCanvas (click)="onDrawClick()">Draw</button>
-  <button appCanvas (click)="onDragClick()">Drag</button>
-  <button appCanvas (click)="onDeleteClick()">Delete</button>
+<img #image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
 
-  <canvas
-    appCanvas
-    (mousedown)="onMouseDown($event)"
-    (mouseup)="onMouseUp($event)"
-    (mousemove)="onMouseMove($event)"
-  >
-  </canvas>
-</div>

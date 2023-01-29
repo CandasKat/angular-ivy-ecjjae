@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import {DrawingDirective} from "./drawing/drawing.directive";
 
 @Component({
   selector: 'my-app',
@@ -8,8 +9,7 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 export class AppComponent implements AfterViewInit {
   /** Template reference to the canvas element */
   @ViewChild('image') image: ElementRef;
-  @ViewChild('canvasEl') canvasEl: ElementRef;
-  private canvas: HTMLCanvasElement;
+
 
   constructor() {}
 
