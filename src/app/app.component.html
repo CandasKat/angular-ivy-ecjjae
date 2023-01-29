@@ -1,8 +1,18 @@
 <img
   #image
   src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png"
-  (mouseDown)="onMouseDown(this)"
-  (mouseMove)="onMouseMove(this)"
-  (drag)="onMouseDrag(this)"
 />
-<rect [element]="this.image"></rect>
+
+<div appCanvas>
+  <button appCanvas (click)="onDrawClick()">Draw</button>
+  <button appCanvas (click)="onDragClick()">Drag</button>
+  <button appCanvas (click)="onDeleteClick()">Delete</button>
+
+  <canvas
+    appCanvas
+    (mousedown)="onMouseDown($event)"
+    (mouseup)="onMouseUp($event)"
+    (mousemove)="onMouseMove($event)"
+  >
+  </canvas>
+</div>
